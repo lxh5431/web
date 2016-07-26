@@ -45,7 +45,7 @@ public class EmployeeDaoImpl extends  BaseDaoImpl<Employee> implements EmployeeD
 	}
 
 	@Override
-	public Boolean findByNandPass(EmployeeDao employee) {
+	public Boolean findByNandPass(Employee employee) {
 		// TODO Auto-generated method stub
 		String hql = "from Employee e where e.registName = ? and e.password = ?";
 		List<Employee> list = hibernateTemp.find(hql, employee.getRegistName(),MD5Utils.md5(employee.getPassword()));
