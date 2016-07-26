@@ -12,7 +12,7 @@ public class Clazz {
     private String status;
     private Integer stuCounts;
     private Course course=new Course();
-    private Set<CouseStudent>cousus=new HashSet<CouseStudent>();
+    private Set<CousuStudent>cousus=new HashSet<CousuStudent>();
     private Set<Student>students=new HashSet<Student>();
 	public Integer getId() {
 		return id;
@@ -56,10 +56,10 @@ public class Clazz {
 	public void setCourse(Course course) {
 		this.course = course;
 	}
-	public Set<CouseStudent> getCousus() {
+	public Set<CousuStudent> getCousus() {
 		return cousus;
 	}
-	public void setCousus(Set<CouseStudent> cousus) {
+	public void setCousus(Set<CousuStudent> cousus) {
 		this.cousus = cousus;
 	}
 	public Set<Student> getStudents() {

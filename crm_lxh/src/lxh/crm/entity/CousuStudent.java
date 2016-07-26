@@ -1,6 +1,6 @@
 package lxh.crm.entity;
 
-public class CouseStudent {
+public class CousuStudent {
 private Integer id;
 private String name;
 private Integer sex;
