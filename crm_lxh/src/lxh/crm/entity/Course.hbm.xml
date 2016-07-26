@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-26 11:11:38 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="lxh.crm.entity.Course" table="COURSE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="totalTime" type="java.lang.Integer">
+            <column name="TOTALTIME" />
+        </property>
+        <property name="money" type="java.lang.Double">
+            <column name="MONEY" />
+        </property>
+        <set name="clazz" table="CLAZZ" inverse="false" lazy="true">
+            <key>
+                <column name="ID" />
+            </key>
+            <one-to-many class="lxh.crm.entity.Clazz" />
+        </set>
+    </class>
+</hibernate-mapping>
